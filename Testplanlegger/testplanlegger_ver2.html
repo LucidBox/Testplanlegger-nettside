@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet2.css" />
+
+    <title>Testplanlegger</title>
+  </head>
+  <body>
+    <div id="topHeader">
+      <h1>TESTPLANLEGGER</h1>
+
+      <div id="navbar">
+        <a href="url">Hjem</a>
+        <a href="url">Bakgrunn</a>
+        <a href="url">Kontakt</a>
+      </div>
+    </div>
+
+    <div id="topContainer">
+      <div id="manualModeContainer">
+        <p><b>Manuelt testvalg</b></p>
+        <div class="subContainer">
+          <select multiple id="manualMode">
+            <option class="manualOption" value="none">Ingen / tøm liste</option>
+            <option class="manualOption" value="WPPSI-IV_Bildekategorier">
+              WPPSI-IV Bildekategorier
+            </option>
+            <option class="manualOption" value="WPPSI_Bildebenevning">
+              WPPSI-IV Bildebenevning
+            </option>
+            <option class="manualOption" value="WPPSI_Ordgjenkjenning">
+              WPPSI-IV Ordgjenkjenning
+            </option>
+            <option class="manualOption" value="WISC_Tallhukommelse_forlengs">
+              WISC-V Tallhukommelse forlengs
+            </option>
+            <option class="manualOption" value="WISC_Figurvekter">
+              WISC-V Figurvekter
+            </option>
+            <option class="manualOption" value="WISC_Regning">
+              WISC-V Regning
+            </option>
+            <option class="manualOption" value="WPPSI_WISC_Terningmønster">
+              WPPSI-IV/WISC-V Terningmønster
+            </option>
+            <option
+              class="manualOption"
+              value="WPPSI_Puslespill_WISC_Visuelle Puslespill"
+            >
+              WPPSI-IV Puslespill/WISC-V Visuelle Puslespill
+            </option>
+            <option class="manualOption" value="WPPSI_WISC-V_Ordforståelse">
+              WPPSI-IV/WISC-V Ordforståelse
+            </option>
+            <option class="manualOption" value="WPPSI_WISC_Likheter">
+              WPPSI-IV/WISC-V Likheter
+            </option>
+            <option class="manualOption" value="WPPSI_WISC-V_Informasjon">
+              WPPSI-IV/WISC-V Informasjon
+            </option>
+            <option class="manualOption" value="WPPSI_WISC-V_Resonnering">
+              WPPSI-IV/WISC-V Resonnering
+            </option>
+            <option class="manualOption" value="WPPSI_WISC_Matriser">
+              WPPSI-IV/WISC-V Matriser
+            </option>
+
+            <option class="manualOption" value="NEPSY_Dyresortering">
+              NEPSY-II Dyresortering
+            </option>
+
+            <option
+              class="manualOption"
+              value="NEPSY-II_Benevning av kroppsdeler"
+            >
+              NEPSY-II Benevning av kroppsdeler
+            </option>
+            <option class="manualOption" value="NEPSY_Klokker">
+              NEPSY-II Klokker
+            </option>
+            <option
+              class="manualOption"
+              value="NEPSY_Forståelse_av_instruksjoner"
+            >
+              NEPSY-II Forståelse av instruksjoner
+            </option>
+            <option class="manualOption" value="NEPSY_Mentalisering">
+              NEPSY-II Mentalisering
+            </option>
+            <option class="manualOption" value="NEPSY_Piler">
+              NEPSY-II Piler
+            </option>
+            <option class="manualOption" value="NEPSY_Blokkonstruksjon">
+              NEPSY-II Blokkonstruksjon
+            </option>
+            <option class="manualOption" value="NEPSY_Figurkopiering">
+              NEPSY-II Figurkopiering
+            </option>
+
+            <option class="manualOption" value="NEPSY_Geometriske puslespill">
+              NEPSY-II Geometriske puslespill
+            </option>
+            <option class="manualOption" value="NEPSY_Bildepuslespill">
+              NEPSY-II Bildepuslespill
+            </option>
+            <option class="manualOption" value="NEPSY_Kartlesing">
+              NEPSY-II Kartlesing
+            </option>
+            <option class="manualOption" value="Ordtak">Ordtak (1, 2)</option>
+
+            <option class="manualOption" value="D-KEFS Tårn">
+              D-KEFS Tårn
+            </option>
+            <option class="manualOption" value="D-KEFS_Tjue_spm">
+              D-KEFS Tjue spm.
+            </option>
+
+            <option class="manualOption" value="CELF_Likheter_Ekspressiv">
+              CELF-IV Likheter Ekspressiv
+            </option>
+            <option class="manualOption" value="CELF_Likheter_Impressiv">
+              CELF-IV Likheter Impressiv
+            </option>
+            <option class="manualOption" value="CELF_Ekspressivt_Ordforråd">
+              CELF-IV Ekspressivt ordforråd
+            </option>
+
+            <option
+              class="manualOption"
+              value="CELF_Forståelse_av instruksjoner"
+            >
+              CELF-IV Forståelse av instruksjoner
+            </option>
+            <option class="manualOption" value="CELF_Narrativ_forståelse">
+              CELF-IV Narrativ forståelse
+            </option>
+            <option class="manualOption" value="Word_Context">
+              Word Context
+            </option>
+
+            <option class="manualOption" value="Beery_VMI">Beery VMI</option>
+            <option class="manualOption" value="Raven">Raven</option>
+            <option class="manualOption" value="WMS_Visuelt_minnespenn">
+              WMS Visuelt minnespenn
+            </option>
+            <option class="manualOption" value="Stroop">Stroop</option>
+          </select>
+          <button id="manualButton">Oppdater liste</button>
+        </div>
+      </div>
+
+      <div id="automaticModeContainer">
+        <p><b>Automatisk testvalg</b></p>
+        <div class="subContainer">
+          <select multiple id="selectMode">
+            <option class="modeOption" value="none">Ingen / tøm liste</option>
+            <option class="modeOption" value="pu">
+              Psykisk utviklingshemming
+            </option>
+          </select>
+          <button id="modeButton">Oppdater liste</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContainer">
+      <p id="mainContainerHeader">
+        <b>Testvalg basert på CHC-modellens domener</b>
+      </p>
+      <div class="tableContainer">
+        <h5 class="tableHeader" id="gf">
+          Flytende intelligens / Resonnering (Gf)
+        </h5>
+        <table>
+          <tr>
+            <td class="tableData" id="i">Induksjon</td>
+            <td class="tableData" id="rg">Deduksjon</td>
+            <td class="tableData" id="rq">Mengderesonnering</td>
+          </tr>
+          <tr>
+            <td class="selecttd">
+              <div id="select-i" class="select hide">
+                <select multiple id="select_i">
+                  <option class="option" value="wiscV_Matriser">
+                    WPPSI-IV/WISC-V Matriser
+                  </option>
+                  <option class="option" value="wiscV_Likheter">
+                    WPPSI-IV/WISC-V Likheter
+                  </option>
+                  <option class="option" value="nepsyII_Dyresortering">
+                    NEPSY II Dyresortering
+                  </option>
+                  <option class="option" value="raven">Raven</option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-rg" class="select hide">
+                <select multiple id="select_rg">
+                  <option class="option" value="">WISC-V Figurvekter</option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-rq" class="select hide">
+                <select multiple id="select_rq">
+                  <option class="option" value="">WISC-V Regning</option>
+                  <option class="option" value="">WISC-V Figurvekter?</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tableContainer">
+        <h5 class="tableHeader" id="gc">
+          Krystallisert intelligens / Forståelse og kunnskap (Gc)
+        </h5>
+        <table>
+          <div class="tableDataContainer">
+            <td class="tableData" id="k0">Allmennkunnskap</td>
+            <td class="tableData" id="ld">Språkutvikling</td>
+            <td class="tableData" id="vl">Leksikalsk kunnskap</td>
+            <td class="tableData" id="ls">Lytteevne</td>
+          </div>
+          <tr>
+            <td class="selecttd">
+              <div id="select-k0" class="select hide">
+                <select multiple id="select_k0">
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Informasjon
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Resonnering
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV Bildekategorier
+                  </option>
+                  <option class="option" value="">
+                    NEPSY-II Benevning av kroppsdeler
+                  </option>
+                  <option class="option" value="">NEPSY-II Klokker</option>
+                  <option class="option" value="">Ordtak (1, 2)</option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-ld" class="select hide">
+                <select multiple id="select_ld">
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Likheter
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Ordforståelse
+                  </option>
+                  <option class="option" value="">D-KEFS Tjue spm.</option>
+                  <option class="option" value="">Word context</option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-vl" class="select hide">
+                <select multiple id="select_vl">
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Likheter
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Ordforståelse
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV Bildebenevning
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV Ordgjenkjenning
+                  </option>
+                  <option class="option" value="">
+                    CELF-IV Likheter Ekspressiv
+                  </option>
+                  <option class="option" value="">
+                    CELF-IV Likheter Impressiv
+                  </option>
+                  <option class="option" value="">
+                    CELF-IV Ekspressivt ordforråd
+                  </option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-ls" class="select hide">
+                <select multiple id="select_ls">
+                  <option class="option" value="">
+                    NEPSY-II Forståelse av instruksjoner
+                  </option>
+                  <option class="option" value="">
+                    NEPSY-II Mentalisering
+                  </option>
+                  <option class="option" value="">
+                    CELF-IV Forståelse av instruksjoner
+                  </option>
+                  <option class="option" value="">
+                    CELF-IV Narrativ forståelse
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tableContainer">
+        <h5 class="tableHeader" id="gv">
+          Visuell resonnering / Visuospatial prosessering (Gv)
+        </h5>
+        <table>
+          <tr>
+            <td class="tableData" id="vz">Visualisering</td>
+            <td class="tableData" id="sr">Hurtig rotering</td>
+            <td class="tableData" id="im">Forestillingsevne</td>
+            <td class="tableData" id="cf">Flexibility of closure</td>
+          </tr>
+          <tr>
+            <td class="selecttd">
+              <div id="select-vz" class="select hide">
+                <select multiple id="select_vz">
+                  <option class="option" value="">
+                    WPPSI-IV/WISC-V Terningmønster
+                  </option>
+                  <option class="option" value="">
+                    WPPSI-IV Puslespill/WISC-V Visuelle puslespill
+                  </option>
+                  <option class="option" value="">Beery VMI</option>
+                  <option class="option" value="">NEPSY-II Piler</option>
+                  <option class="option" value="">
+                    NEPSY-II Blokkonstruksjon
+                  </option>
+                  <option class="option" value="">
+                    NEPSY-II Figurkopiering
+                  </option>
+                  <option class="option" value="">D-KEFS Tårn</option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-sr" class="select hide">
+                <select multiple id="select_sr"></select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-im" class="select hide">
+                <select multiple id="select_im"></select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-cf" class="select hide">
+                <select multiple id="select_cf">
+                  <option class="option" value="">WPPSI-IV Puslespill</option>
+                  <option class="option" value="">
+                    NEPSY-II Geometriske puslespill
+                  </option>
+                  <option class="option" value="">
+                    NEPSY-II Bildepuslespill
+                  </option>
+                  <option class="option" value="">NEPSY-II Kartlesing</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tableContainer">
+        <h5 class="tableHeader" id="gwm">
+          Arbeidsminnekapasitet /Korttidshukommelse (Gwm)
+        </h5>
+        <table>
+          <tr>
+            <td class="tableData" id="wa">Auditivt korttidsminne</td>
+            <td class="tableData" id="wv">Visuospatialt korttidsminne</td>
+            <td class="tableData" id="ac">Oppmerksomhetskontroll</td>
+            <td class="tableData" id="wc">Arbeidsminnekapasitet</td>
+          </tr>
+          <tr>
+            <td class="selecttd">
+              <div id="select-wa" class="select hide">
+                <select multiple id="select_wa">
+                  <option class="option" value="">
+                    WISC-V Tallhukommelse forlengs
+                  </option>
+                  <option class="option" value="">
+                    Andre minnespennprøver som bokstav-, ord- eller
+                    setningsspenn
+                  </option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-wv" class="select hide">
+                <select multiple id="select_wv">
+                  <option class="option" value="">
+                    WMS Visuelt minnespenn
+                  </option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-ac" class="select hide">
+                <select multiple id="select_ac">
+                  <option class="option" value="">Stroop</option>
+                  <option class="option" value="">
+                    Mange tester for Prosesseringshastighet (Gs)
+                  </option>
+                </select>
+              </div>
+            </td>
+            <td class="selecttd">
+              <div id="select-wc" class="select hide">
+                <select multiple id="select_wc">
+                  <option class="option" value="">
+                    Wc=Wv/Wa+AC. Bør altså måles med tester som måler AC og Wa
+                    eller Wv.
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tableContainer">
+        <h5 class="tableHeader" id="gs">Prosesseringshastighet (Gs)</h5>
+        <table>
+          <tr>
+            <td class="tableData" id="p">Persepsjonshastighet</td>
+          </tr>
+          <tr>
+            <td class="selecttd">
+              <div id="select-p" class="select hide">
+                <select multiple id="select_p">
+                  <option class="option" value=""></option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="rightContainer">
+      <div id="descriptionContainer">
+        <div>
+          <p id="descriptionHeader">Beskrivelse</p>
+          <p></p>
+          <p id="descriptionText"></p>
+        </div>
+
+        <div id="descriptionButtonContainer">
+          <div id="phraseContainer">
+            <button id="phraseButton">Fraser</button>
+          </div>
+          <div id="recommendationContainer">
+            <button id="recommendationButton">Anbefalinger</button>
+          </div>
+          <div id="referenceContainer">
+            <button id="referenceButton">Referanser</button>
+          </div>
+        </div>
+      </div>
+      <div id="optionContainer">
+        <div>
+          <p id="optionHeader">Utvalgte tester</p>
+          <button id="optionSummaryButton">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="oppsummering.html"
+            >
+              Vis oppsummering
+            </a>
+          </button>
+        </div>
+
+        <ul id="optionList"></ul>
+      </div>
+    </div>
+    <script src="testplanlegger.js"></script>
+    <script src="data.js"></script>
+  </body>
+</html>

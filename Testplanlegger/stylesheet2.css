@@ -1,0 +1,306 @@
+/* MAIN PAGE */
+#topHeader {
+  text-align: center;
+  padding: 2vw 0vw;
+  height: 6vw;
+  border-radius: 1rem;
+  background-color: rgba(75, 100, 95, 0.535);
+  margin-bottom: 1rem;
+  width: 54.3vw;
+  float: left;
+  margin-left: 1.5rem;
+}
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+}
+#navbar {
+  margin: 1vw 0vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+#topContainer {
+  margin-top: 1.2rem;
+  padding: 3rem 1rem;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  width: 52vw;
+  float: left;
+  top: 11rem;
+  margin-left: 1.5rem;
+  border-color: black;
+  border-radius: 1rem;
+  border: 0.1rem;
+  border-style: solid;
+}
+
+.subContainer select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+#manualButton {
+  border-radius: 1rem;
+  height: 2rem;
+  border-style: none;
+  margin-top: 0.7rem;
+}
+
+#manualButton:hover {
+  background-color: rgb(110, 144, 137);
+}
+
+#modeButton {
+  border-radius: 1rem;
+  height: 2rem;
+  border-style: none;
+  margin-top: 0.7rem;
+}
+
+#modeButton:hover {
+  background-color: rgb(110, 144, 137);
+}
+
+#mainContainer {
+  margin-top: 22rem;
+  left: 2rem;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 1.5rem;
+  margin-bottom: 8rem;
+  border-color: black;
+  border-radius: 1rem;
+  border: 0.1rem;
+  border-style: solid;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+#mainContainerHeader {
+  text-align: center;
+}
+.tableContainer {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  justify-content: space-around;
+  background-color: rgb(241, 241, 242);
+  border-radius: 1rem;
+  max-width: 780px;
+}
+
+.tableData {
+  font-size: 1vw;
+  height: 4vw;
+}
+
+td {
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+}
+
+td.tableData {
+  background-color: rgb(207, 205, 205);
+}
+
+td:hover {
+  background-color: rgb(110, 144, 137);
+}
+
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 2vw;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+h5:hover {
+  color: rgb(101, 100, 100);
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.tableDataHeader {
+  font-size: 0.7vw;
+  background-color: rgb(95, 114, 114);
+  height: 3vw;
+}
+
+#rightContainer {
+  position: fixed;
+  z-index: -1;
+  right: 2rem;
+  margin-bottom: 1rem;
+}
+
+#descriptionContainer {
+  background-color: rgb(182, 190, 190);
+  width: 25vw;
+  height: 27vw;
+  border-radius: 1vw;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 2vw 5vw;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#descriptionButtonContainer {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+#optionContainer {
+  background-color: rgb(222, 224, 224);
+  width: 25vw;
+  height: 10vw;
+
+  border-radius: 1vw;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 5vw;
+  position: fixed;
+  margin-bottom: 1rem;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#descriptionHeader {
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+
+#optionHeader {
+  position: absolute;
+  padding-top: 1vw;
+  left: 3vw;
+  top: 0vw;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#descriptionText {
+  font-size: 1rem;
+}
+
+#optionList {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1vw;
+  margin: auto;
+  float: left;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+#optionSummaryButton {
+  right: 2vw;
+  top: 1.9vw;
+  position: absolute;
+  float: right;
+  font-size: 1vw;
+  background-color: rgb(225, 199, 152);
+  border-radius: 1vw;
+  border-style: none;
+  padding: 0.5vw;
+}
+
+#optionSummaryButton:hover {
+  background-color: rgb(194, 172, 131);
+}
+
+.hide {
+  display: none;
+}
+
+.select {
+  background-color: rgb(145, 167, 167);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* SUMMARY PAGE */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  padding: 2vw;
+  margin-bottom: 1vw;
+  background-color: rgb(145, 167, 167);
+  border-radius: 1vw;
+}
+
+#summaryList > div {
+  padding: 2vw;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.domainHeader {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.domainDescription {
+  margin: 1vw;
+}
+.domainTests {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.testContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#buttonContainer {
+  margin-top: 2vw;
+}
+
+#buttonContainer > button {
+  padding: 0.7vw;
+  border-radius: 1vw;
+  font-size: 1vw;
+}
+
+#showDomainsButton {
+  border-style: none;
+}
+
+#domainsDescriptionButton {
+  border-style: none;
+}
+input {
+  font-size: 1vw;
+  width: 10vw;
+  background-color: rgb(237, 235, 235);
+}
